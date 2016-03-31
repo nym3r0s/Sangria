@@ -1,0 +1,12 @@
+{
+    "name": "gokulsrinivas/sangria",
+    "description": "A collection of useful libraries to make life easier.",
+    "authors": [
+        {
+            "name": "Gokul Srinivas",
+            "email": "gokusrinivas@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
