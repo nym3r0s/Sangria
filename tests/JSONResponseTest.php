@@ -47,7 +47,7 @@ class JSONResponseTest extends PHPUnit_Framework_TestCase
 	public function testArrayCheck()
 	{
 		$status_code = 200;
-		$message = ["abc","def",1,23,true];
+		$message = array("abc","def",1,23,true);
 
 		$test_response_string = JSONResponse::response($status_code,$message);
 		$correct_response_string = '{"status_code":200,"message":["abc","def",1,23,true]}';
@@ -57,7 +57,7 @@ class JSONResponseTest extends PHPUnit_Framework_TestCase
 	public function testNestedArrayCheck()
 	{
 		$status_code = 200;
-		$message = ["abc",["nest1","nest2"],"def",["asdf",["asdfasdf",["test2"]]]];
+		$message = array("abc",array("nest1","nest2"),"def",array("asdf",array("asdfasdf",array("test2"))));
 
 		$test_response_string = JSONResponse::response($status_code,$message);
 		$correct_response_string = '{"status_code":200,"message":["abc",["nest1","nest2"],"def",["asdf",["asdfasdf",["test2"]]]]}';
@@ -69,8 +69,8 @@ class JSONResponseTest extends PHPUnit_Framework_TestCase
 		$status_code = 200;
 		$message = new StdClass();
 		$message->prop1 = "asdf";
-		$message->prop2 = ["asdf"];
-		$message->prop3 = [["asdf"]];
+		$message->prop2 = array("asdf");
+		$message->prop3 = array(array("asdf"));
 		$message->prop4 = true;
 
 		$test_response_string = JSONResponse::response($status_code,$message);
