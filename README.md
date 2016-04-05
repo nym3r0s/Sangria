@@ -8,7 +8,7 @@ A Set of lightweight PHP libraries to make your life easier.
 
 ## Installation
 
-* Require `gokulsrinivas/sangria` in your `composer.json`. 
+* Add `"gokulsrinivas/sangria":"dev-master"` to `"require"` in your `composer.json`. 
 * Do a `composer install`
 * If you're not using this in a framework like laravel, be sure to `include "vendor/autoload.php"` in your file. `vendor` is the folder that is created after the composer install.
 * `use Sangria\JSONResponse` / `IMAPAuth` / `LDAPAuth` / `HelperFunctions`
