@@ -15,7 +15,7 @@ class HelperFunctions
 	 * @param  mixed $obj [the variable to be dumped]
 	 * @return void      [returns nothing]
 	 */
-	public function dd($obj = NULL)
+	public static function dd($obj = NULL)
 	{
 		var_dump($obj);
 		die();
@@ -25,7 +25,7 @@ class HelperFunctions
 	 * @param  mixed $obj [the variable to be dumped]
 	 * @return void      [returns nothing]
 	 */
-	public function ddp($obj = NULL)
+	public static function ddp($obj = NULL)
 	{
 		try
 		{
@@ -48,7 +48,7 @@ class HelperFunctions
 	 * @param  string  $email_str [Email ID as a string]
 	 * @return boolean            [true if the string is an email, false otherwise]
 	 */
-	public function isEmail($email_str = NULL)
+	public static function isEmail($email_str = NULL)
 	{
 		/**
 		 * Check if not null and matches regex
