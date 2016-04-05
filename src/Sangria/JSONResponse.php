@@ -28,7 +28,7 @@ class JSONResponse
 		 * [$HTTP_MESSAGES Default Message Phrases for all the HTTP Status Codes]
 		 * @var [array]
 		 */
-		$HTTP_MESSAGES = [
+		$HTTP_MESSAGES = array(
 		"100" => "Continue",
 		"101" => "Switching Protocols",
 		"200" => "OK",
@@ -69,7 +69,7 @@ class JSONResponse
 		"503" => "Service Unavailable",
 		"504" => "Gateway Time-out",
 		"505" => "HTTP Version not supported",
-		];	
+		);	
 
 		// Initialize the result array
 		$json_result = array("status_code" => "400","message" => $HTTP_MESSAGES["400"]);
