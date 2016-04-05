@@ -1,6 +1,7 @@
 {
     "name": "gokulsrinivas/sangria",
     "description": "A collection of useful libraries to make life easier.",
+    "keywords":["JSON","API","Helpers","IMAP","Email"],
     "authors": [
         {
             "name": "Gokul Srinivas",
