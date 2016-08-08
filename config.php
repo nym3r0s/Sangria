@@ -17,7 +17,7 @@ if(!defined("__SANGRIA_IMAP_SERVER_ADDR__"))
  */
 if(!defined("__SANGRIA_IMAP_SERVER_PORT__"))
 {
-	define("__SANGRIA_IMAP_SERVER_PORT__","993");
+	define("__SANGRIA_IMAP_SERVER_PORT__","143");
 }
 /**
  * LDAP Server Address
